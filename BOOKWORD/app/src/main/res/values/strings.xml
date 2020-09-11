@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SCRIBE</string>
+    <string name="note">Note</string>
+    <string name="todo">TODO</string>
+    <string name="title">Title</string>
+    <string name="discription_of_the_post">discription of the post</string>
+    <string name="search_books_notes_quotes">"Find what thou Seek..."</string>
+    <string name="search">Search</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

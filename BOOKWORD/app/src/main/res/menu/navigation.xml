@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/libray"
+        android:title="Home"
+        android:visible="true"
+        android:layout_marginRight="20dp"
+        android:icon="@drawable/home"/>
+<item
+    android:id="@+id/mybooks"
+    android:title="My Book"
+    android:visible="true"
+    android:layout_marginLeft="20dp"
+    android:icon="@drawable/bookmark"/>
+
+    <item
+        android:id="@+id/addnote"
+        android:title="Add Note"
+        android:visible="true"
+        android:layout_marginLeft="20dp"
+        android:icon="@drawable/add"/>
+    <item
+        android:id="@+id/genres"
+        android:title="Genres"
+        android:visible="true"
+        android:layout_marginLeft="20dp"
+        android:icon="@drawable/mybook"/>
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:visible="true"
+        android:layout_marginLeft="20dp"
+        android:icon="@drawable/search"/>
+
+</menu>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SearchActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_above="@+id/navigation"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/searchtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:layout_marginTop="10dp"
+            android:textSize="40dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/keepcalmmedium"/>
+
+        <LinearLayout
+            android:id="@+id/seerachlinerlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchtext"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/searchtextedittext"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:alpha=".6"
+                android:focusable="true"
+                android:background="@drawable/search_edittext"
+                android:hint="@string/search_books_notes_quotes"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textAlignment="textStart"/>
+
+            <ImageButton
+                android:background="@drawable/search_edittext2"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/searchbtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignEnd="@+id/searchtextedittext"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/search" />
+
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/srefresh_layout"
+            android:layout_below="@+id/seerachlinerlayout"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/search_recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:stackFromEnd="true" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/navigation"
+        android:layout_height="wrap_content"
+        app:labelVisibilityMode="labeled"
+        android:keepScreenOn="true"
+        android:background="#ffff"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation"/>
+
+</RelativeLayout>

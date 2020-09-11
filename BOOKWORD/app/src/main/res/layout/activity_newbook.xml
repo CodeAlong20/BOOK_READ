@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edittext_background"
+    tools:context=".NEWBOOK">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_above="@+id/navigation"
+        android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:background="@drawable/edittext_background"
+            android:id="@+id/addimage"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerInside"
+            android:src="@drawable/addimage"
+            tools:srcCompat="@drawable/addimage" />
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/addimage"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:autofillHints=""
+            android:background="@drawable/edittext_background"
+            android:hint="@string/title"
+            android:inputType="textAutoComplete|textAutoCorrect|text"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edittext_background"
+            android:gravity="start"
+            android:hint="@string/note"
+            android:keepScreenOn="true"
+            android:overScrollMode="always"
+            android:textAlignment="textStart"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/navigation"
+        android:layout_height="wrap_content"
+        app:labelVisibilityMode="labeled"
+        android:keepScreenOn="true"
+        android:background="#ffff"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation"/>
+
+</RelativeLayout>

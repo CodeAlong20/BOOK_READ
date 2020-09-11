@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "706910401990",
+    "firebase_url": "https://scribe-af052.firebaseio.com",
+    "project_id": "scribe-af052",
+    "storage_bucket": "scribe-af052.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706910401990:android:f400efbc1f1491b13eaec7",
+        "android_client_info": {
+          "package_name": "com.bitvilltecnologies.bookword"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706910401990-r77b5h3ftkkf05gkjntekvftcegs6q6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqfcBoS96cOqWCJFxXWMmc2pOHQhUOiMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706910401990-r77b5h3ftkkf05gkjntekvftcegs6q6p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706910401990:android:8cf73f8deec3cf543eaec7",
+        "android_client_info": {
+          "package_name": "com.hashcode.whatsstatussaver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706910401990-r77b5h3ftkkf05gkjntekvftcegs6q6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqfcBoS96cOqWCJFxXWMmc2pOHQhUOiMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706910401990-r77b5h3ftkkf05gkjntekvftcegs6q6p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
